@@ -5,12 +5,9 @@ export default function Hero() {
     <section id="home" className="py-12 sm:py-16 md:py-24 bg-gray-950 border-b border-gray-800/80">
       <div className="max-w-5xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12">
         
-        {/* Intro Text */}
         <div className="flex-1 text-center md:text-left w-full">
-          {/* Status Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold tracking-wide uppercase mb-4">
-            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-            Available for Opportunities
+            
           </div>
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
@@ -23,8 +20,6 @@ export default function Hero() {
           <p className="text-base sm:text-lg md:text-xl text-gray-300 font-normal leading-relaxed mb-6">
             Final-year B.Tech CSE student &amp; Front-End Web Developer who builds responsive, component-driven web applications using React, JavaScript, and modern CSS.
           </p>
-
-          {/* About / Bio Card */}
           <div
             id="about"
             className="p-4 sm:p-5 bg-gradient-to-b from-gray-900 to-gray-900/60 rounded-xl border border-gray-800 shadow-lg mb-6 sm:mb-8 text-left"

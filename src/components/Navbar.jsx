@@ -12,8 +12,6 @@ export default function Navbar() {
         >
           Daksh <span className="text-blue-500">Dhasmana</span>
         </a>
-
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-2 text-sm font-medium text-gray-400">
           <a
             href="#home"
@@ -46,8 +44,6 @@ export default function Navbar() {
             Contact
           </a>
         </div>
-
-        {/* Mobile Hamburger Button */}
         <div className="md:hidden">
           <button
             type="button"
@@ -67,8 +63,6 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-
-      {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-950/95 border-b border-gray-800 px-4 pt-2 pb-4 space-y-1">
           <a

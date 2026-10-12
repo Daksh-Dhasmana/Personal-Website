@@ -24,7 +24,6 @@ export default function Projects() {
   return (
     <section id="projects" className="py-12 sm:py-20 bg-gray-950">
       <div className="max-w-5xl mx-auto px-4">
-        {/* Section Header */}
         <div className="text-center md:text-left mb-8 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-1">
             Portfolio
@@ -36,19 +35,15 @@ export default function Projects() {
             A selection of web applications I have built and open-sourced on GitHub.
           </p>
         </div>
-
-        {/* Responsive Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
               className="group relative bg-gradient-to-b from-gray-900/90 to-gray-900/50 hover:from-gray-900 hover:to-gray-900/80 border border-gray-800 hover:border-gray-700/80 rounded-2xl p-5 sm:p-7 shadow-lg hover:shadow-2xl hover:shadow-black/60 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden"
             >
-              {/* Top hover accent bar */}
               <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
               <div>
-                {/* Project Showcase / Glimpse Image */}
                 {project.image && (
                   <div className="mb-4 sm:mb-5 overflow-hidden rounded-xl border border-gray-800/80 bg-gray-950">
                     <img

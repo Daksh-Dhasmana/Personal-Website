@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
@@ -11,7 +13,9 @@ export default function App() {
         <Hero />
         <Skills />
         <Projects />
+        <Resume />
       </main>
+      <Contact />
     </div>
   );
 }

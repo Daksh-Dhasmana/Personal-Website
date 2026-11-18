@@ -38,7 +38,13 @@ export default function Navbar() {
             Projects
           </a>
           <a
-            href="mailto:dakshdhasmana@gmail.com"
+            href="#resume"
+            className="px-3 py-1.5 rounded-lg hover:text-white hover:bg-gray-900 transition-colors"
+          >
+            Resume
+          </a>
+          <a
+            href="#contact"
             className="ml-2 px-4 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition-colors"
           >
             Contact
@@ -94,11 +100,18 @@ export default function Navbar() {
             Projects
           </a>
           <a
-            href="mailto:dakshdhasmana@gmail.com"
+            href="#resume"
+            onClick={() => setIsOpen(false)}
+            className="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gray-900 transition-colors"
+          >
+            Resume
+          </a>
+          <a
+            href="#contact"
             onClick={() => setIsOpen(false)}
             className="block px-3 py-2 rounded-lg text-base font-medium text-blue-400 hover:bg-gray-900 transition-colors"
           >
-            Contact Me (dakshdhasmana@gmail.com)
+            Contact
           </a>
         </div>
       )}

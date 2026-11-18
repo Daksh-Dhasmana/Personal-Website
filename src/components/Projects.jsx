@@ -1,21 +1,23 @@
-import eldenRingImg from "../assets/eldenring-preview.png";
+import multiLlmImg from "../assets/multi-llm-preview.png";
 import memoryCardImg from "../assets/memory-card-preview.png";
 
 export default function Projects() {
   const projects = [
     {
-      title: "Elden Ring Fan Page",
+      title: "Multi-LLM",
       description:
-        "A web application featuring lore, soundtrack, and characters from the Elden Ring universe, built with a focused, responsive interface.",
-      tags: ["HTML", "Tailwind.css"],
-      githubUrl: "https://github.com/Daksh-Dhasmana/EldenRIngFanPage",
-      image: eldenRingImg,
+        "A multi-model AI chat platform powered by OpenRouter API, featuring dynamic fallback routing across multiple LLMs and responsive real-time conversation.",
+      tags: ["React", "Tailwind CSS", "OpenRouter API", "Axios"],
+      liveUrl: "https://multi-llm-eta.vercel.app/",
+      githubUrl: "https://github.com/Daksh-Dhasmana/Multi-LLM",
+      image: multiLlmImg,
     },
     {
       title: "Memory Card Game",
       description:
         "An interactive React application testing memory and attention with dynamic card shuffling, score tracking, and responsive layout.",
       tags: ["React", "JavaScript", "CSS"],
+      liveUrl: "https://daksh-dhasmana.github.io/Project-Memory-Card/",
       githubUrl: "https://github.com/Daksh-Dhasmana/Project-Memory-Card",
       image: memoryCardImg,
     },
@@ -72,18 +74,35 @@ export default function Projects() {
                 </div>
               </div>
 
-              <div>
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-400 group-hover:text-blue-300 transition-colors py-1"
-                >
-                  <span>View Repository</span>
-                  <span className="transform group-hover:translate-x-1.5 transition-transform duration-200">
-                    &rarr;
-                  </span>
-                </a>
+              <div className="flex flex-wrap items-center gap-4 pt-1">
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors py-1"
+                  >
+                    <span>Live Preview</span>
+                    <span className="text-xs"></span>
+                  </a>
+                )}
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`inline-flex items-center gap-1.5 text-sm font-semibold transition-colors py-1 ${
+                      project.liveUrl
+                        ? "text-gray-400 hover:text-gray-200"
+                        : "text-blue-400 group-hover:text-blue-300"
+                    }`}
+                  >
+                    <span>View Repository</span>
+                    <span className="transform group-hover:translate-x-1.5 transition-transform duration-200">
+                      &rarr;
+                    </span>
+                  </a>
+                )}
               </div>
             </div>
           ))}

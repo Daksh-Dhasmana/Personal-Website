@@ -18,7 +18,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-300 font-normal leading-relaxed mb-6">
-            Final-year B.Tech CSE student &amp; Front-End Web Developer who builds responsive, component-driven web applications using React, JavaScript, and modern CSS.
+            B.Tech CSE student &amp; Full-Stack Developer specializing in JavaScript-based web applications, component-driven architecture, and responsive user experiences.
           </p>
           <div
             id="about"
@@ -28,7 +28,7 @@ export default function Hero() {
               About Me
             </h2>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Passionate about building clean user interfaces and transitioning into backend development, data structures, and system design.
+              Passionate about solving complex logic problems, building clean user interfaces, and delivering seamless user experiences with a focus on scalable, maintainable code.
             </p>
           </div>
 
@@ -40,6 +40,12 @@ export default function Hero() {
                 className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-sm font-semibold rounded-lg shadow-lg shadow-blue-600/25 transition-all text-center"
               >
                 View Projects
+              </a>
+              <a
+                href="#resume"
+                className="px-6 py-3 bg-gray-900 hover:bg-gray-850 text-gray-200 hover:text-white text-sm font-semibold rounded-lg border border-gray-700/80 transition-all text-center"
+              >
+                View Resume
               </a>
               <a
                 href="mailto:dakshdhasmana@gmail.com"
